@@ -162,7 +162,7 @@ function App() {
     setError(null);
     try {
         const payload = { data: playerData, point_system: pointSystem };
-        const response = await fetch(`http://127.0.0.1:8000/calculate_points`, {
+        const response = await fetch(`https://cwl-server-backend.onrender.com/`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload),
